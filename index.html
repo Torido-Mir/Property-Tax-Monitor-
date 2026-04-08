@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipal Property Tax Monitor</title>
+    <style>
+        /* Reset margins to prevent scrolling issues */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Simple, professional header */
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 15px 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Container that forces the dashboard to take up the rest of the screen */
+        .dashboard-container {
+            flex-grow: 1;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Forces the Power BI iframe to fill the container smoothly */
+        .dashboard-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Municipal Property Tax Monitor</h1>
+    </header>
+
+    <div class="dashboard-container">
+        
+    <iframe title="FIR Property Tax" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=b51e24fc-9680-4814-8702-3b80d25e3e86&autoAuth=true&ctid=723a5a87-f39a-4a22-9247-3fc240c01396" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+
+</body>
+</html>
